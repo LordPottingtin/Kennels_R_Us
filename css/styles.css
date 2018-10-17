@@ -1,0 +1,148 @@
+/****
+Group C
+CSCI 4750
+
+Color http://paletton.com/#uid=71f0U0kris+gWBilUuLtNnnynis
+****/
+
+/*BASIC LAYOUT*/
+html, body{
+	height: 100%;
+	width: 100%;
+}
+html{
+	background-color: #140D66;
+}
+/*body*/
+body {
+	margin: 0% auto;
+	background-image: linear-gradient(to right, #140D66,#221A82, 
+									#4D46AB, #6F69C1);					
+}
+.frontpg-owner{
+	height: 300px;
+	width: 200px;
+	display: inline-block;
+	margin-left: 20%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	border: 2px solid #47127D;
+	clear: both;
+}
+.frontpg-dog{
+	height: 300px;
+	width: 300px;
+	display: inline-block;
+	margin-left: 20%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	border: 2px solid #47127D;
+	clear: both;
+}
+/*MAIN*/
+main{
+	margin: 2%;
+	background-image: linear-gradient(to right, #E7BA22, #BA920D, 
+									#F5CF4D, #FFE078);
+	border: 2px;
+	border-style: solid;
+	border-color: #937100; 
+}
+main p{
+	padding: 1%;
+}
+/*thinking about rotating background based on page*/
+.home{
+	background-image: url(images/sky.jpg);
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*HEADER*/
+header {
+	text-align: center;
+	height: 30%;
+	width: 100%;
+}
+header h1{
+	margin: 0;
+}
+.ban-text{
+	text-align: center;
+  	position: relative;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	color: #E7BA22;
+	text-shadow: 2px 2px 5px #072F60;
+	font-size: 40px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.back-img{
+	background-image: url("images/banner_2.jpg");
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*MENU/DROPDOWN*/
+.topnav{
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+	background-color: #3B69A0;
+}
+.topnav a {
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 17px;
+	border: 1px solid black;
+}
+.topnav a:hover{
+	background-color: #BAAD0D;
+} 
+
+	
+/*FOOTER*/
+footer{
+	font-size: small;
+	font-style: italic;
+	text-align: right;
+	border-top: 1px solid #E7BA22;
+	background-color: #3B69A0;
+}
+
+/*FORMS*/
+/*regular form*/
+form {
+	
+}
+label {
+	
+}
+
+/*TABLE*/
+
+/*LINKS*/
+/* unvisited link */
+a {
+	text-decoration: none;
+}
+a:link {
+    color: #D3AE00;
+}
+/* visited link */
+a:visited {
+    color: #120D66;
+}
+/* mouse over link */
+a:hover {
+    color: #5B229C;
+}
+/* selected link */
+a:active {
+    color: #072F60;
+}
