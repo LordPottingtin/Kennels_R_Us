@@ -3,7 +3,6 @@
     $currentPage = "home";
 
     include("view_helpers/header.php");
-
     
 ?>
 <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
@@ -25,8 +24,17 @@
         qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
 </main>
 
-<img class = "frontpg-owner" src = "css/images/owner.jpg" alt = "picture of owners">
-<img class = "frontpg-dog" src = "css/images/happy_dog.jpg" alt = "picture of dog">
+<div class = "centered">
+    <figure>
+    <h3>Our Owner</h3>
+    <img class = "frontpg-owner" src = "css/images/owner.jpg" alt = "picture of owners">
+    </figure>
+
+    <figure>
+    <h3>His Beautiful Dog</h3>
+    <img class = "frontpg-dog" src = "css/images/happy_dog.jpg" alt = "picture of dog">
+    </figure>
+</div>
 
 </body>
 <?php

@@ -30,8 +30,8 @@ else $folderEscape = "";
 </header>
 
 <div class = "topnav">
-    <a href = "<?php echo $folderEscape?>index.php">Home</a>
-    <a href = "/Kennels_R_us/products/index.php">Products</a>
-    <a href = "<?php echo $folderEscape?>#cart">Cart</a>
-    <a href = "<?php echo $folderEscape?>#about">About</a>
+    <a href = "<?php echo $folderEscape?>index.php?action=home">Home</a>
+    <a href = "<?php echo $folderEscape?>products/index.php?action=products">Products</a>
+    <a href = "<?php echo $folderEscape?>#cart?action=cart" >Cart</a>
+    <a href = "<?php echo $folderEscape?>#about?action=about">About</a>
 </div>

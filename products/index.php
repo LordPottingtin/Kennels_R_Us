@@ -1,22 +1,18 @@
 <?php
-    $title = "Kennels R Us";
-    $currentPage = 'products';
-    include("../view_helpers/header.php");
-?>
-<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
-<main>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-        deserunt mollit anim id est laborum.</p>
+    //require("../model/database.php");
 
-</main>
+    $currentPage = filter_input(INPUT_POST, "action");
+    if(is_null($currentPage)){
+        $currentPage = filter_input(INPUT_GET, "action");
+        if(is_null($currentPage)){
+            $currentPage = "home";
+        }
+    }
 
-<img class = "frontpg-owner" src = "css/images/owner.jpg" alt = "picture of owners">
-<img class = "frontpg-dog" src = "css/images/happy_dog.jpg" alt = "picture of dog">
+    if ($currentPage == "home"){
+        include("../index.php");
 
-</body>
-<?php
-    include("../view_helpers/footer.php");
-?>
+    }else if ($currentPage == "products"){
+        $title = "Our Kennels";
+        include("./product_list.php"); 
+    }
