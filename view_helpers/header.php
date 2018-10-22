@@ -2,6 +2,15 @@
   Group C
   CSCI 4750
 -->
+<?php 
+$folderEscape = "";
+if (!($currentPage == 'home')){
+$folderEscape = "../";
+}
+else $folderEscape = "";
+
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -21,8 +30,8 @@
 </header>
 
 <div class = "topnav">
-    <a href = "index.php?action=home">Home</a>
-    <a href = "../pages/index.php?action=products">Products</a>
-    <a href = "#cart">Cart</a>
-    <a href = "#about">About</a>
+    <a href = "<?php echo $folderEscape?>index.php">Home</a>
+    <a href = "/Kennels_R_us/products/index.php">Products</a>
+    <a href = "<?php echo $folderEscape?>#cart">Cart</a>
+    <a href = "<?php echo $folderEscape?>#about">About</a>
 </div>

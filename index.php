@@ -1,7 +1,10 @@
 <?php
     $title = "Kennels R Us";
+    $currentPage = "home";
 
     include("view_helpers/header.php");
+
+    
 ?>
 <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
 <main>
